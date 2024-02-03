@@ -178,7 +178,7 @@ header, .navbar {
 
 #data-area {
     background: url('../img/cidadeparallax.png') center center no-repeat fixed;
-    background-size: ;
+    background-size: cover;
 }
 
 .circle-box div {
@@ -206,7 +206,8 @@ header, .navbar {
 /*work*/
 
 #apply-area {
-    height: 600px;
+    background: url('../img/pattern.png') center center no-repeat fixed;
+    background-size: cover;
 }
 
 #apply-area .container-fluid, .apply-area .row {
@@ -221,7 +222,6 @@ header, .navbar {
 #company-img {
     background-image: url('../img/empresa.jpg');
     background-size: cover;
-    height: 100%;
 }
 
 #pattern-img h4, #pattern-img p {
@@ -242,7 +242,7 @@ header, .navbar {
     display: block;
     height: auto;
     width: 180px;
-    margin: 30px auto 8% auto;
+    margin: 30px auto 3% auto;
     background-color: transparent;
     border-color: #fff;
 }
