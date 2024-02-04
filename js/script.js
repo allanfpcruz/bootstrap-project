@@ -39,7 +39,7 @@ $(document).ready(function() {
     let circleC = new ProgressBar.Circle(containerC, {
         color: '#64daf9',
         strokeWidth: 8,
-        duration: 2000,
+        duration: 1800,
         from: {color: '#aaa'},
         to: {color: '#64daf9'},
         step: function(state, circle) {
@@ -56,7 +56,7 @@ $(document).ready(function() {
     let circleD = new ProgressBar.Circle(containerD, {
         color: '#64daf9',
         strokeWidth: 8,
-        duration: 2200,
+        duration: 2000,
         from: {color: '#aaa'},
         to: {color: '#64daf9'},
         step: function(state, circle) {
@@ -83,7 +83,39 @@ $(document).ready(function() {
         } 
     })
 
-    //paralax
+    //filtro
+    $('.filter-btn').on('click', function() {
+        let type = $(this).attr('id')
+        let boxes = $('.project-box')
 
+        $('.main-btn').removeClass('active')
+        $(this).addClass('active')
+
+        if(type == 'dsg-btn') {
+            eachBoxes('dsg', boxes)
+        } else if (type == 'all-btn') {
+            eachBoxes('all', boxes)
+        } else if (type == 'dev-btn') {
+            eachBoxes('dev', boxes)
+        } else if (type == 'seo-btn') {
+            eachBoxes('seo', boxes)
+        }
+
+        
+    })
+
+    function eachBoxes(type, boxes) {
+        if(type == 'all') {
+            $(boxes).fadeIn()
+        } else {
+            $(boxes).each(function() {
+                if(!$(this).hasClass(type)) {
+                    $(this).fadeOut('slow')
+                } else {
+                    $(this).fadeIn()
+                }
+            })
+        }
+    }
 
 })

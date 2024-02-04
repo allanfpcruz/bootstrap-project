@@ -68,6 +68,7 @@ header, .navbar {
 }
 
 #mainSlider .carousel-caption h2 {
+    width: 100%;
     font-size: 50px;
     margin-bottom: 30px;
 }
@@ -206,6 +207,7 @@ header, .navbar {
 /*work*/
 
 #apply-area {
+    height: calc(100vh - 70px);
     background: url('../img/pattern.png') center center no-repeat fixed;
     background-size: cover;
 }
@@ -220,6 +222,7 @@ header, .navbar {
 }
 
 #company-img {
+    height: calc(100vh - 70px);
     background-image: url('../img/empresa.jpg');
     background-size: cover;
 }
@@ -250,4 +253,108 @@ header, .navbar {
 #apply-btn:hover {
     border-color: #65daf9;
     background-color: #65daf9;
+}
+
+/*portfolio*/
+
+.project-box {
+    margin-bottom: 30px;
+}
+
+#filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#portfolio-area .filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+#portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+    color: #fff;
+    background-color: #65daf9;
+    border-color: #65daf9;
+}
+
+/*newsletter*/
+
+#news-area {
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#news-area p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+#email-input {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #65daf9;
+    display: inline;
+    box-sizing: border-box;
+    width: calc(35% - 150px);
+    height: 40px;
+}
+
+#news-btn {
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #65daf9;
+    background-color: #65daf9;
+    text-transform: uppercase;
+    color: #fff;
+    height: 40px;
+    width: 160px;
+    position: relative;
+    top: -1px;
+    left: -5px;
+    padding: 0 30px;
+    transition: .5s;
+}
+
+/*call to action*/
+
+#call-area {
+    background-color: #65daf9;
+    text-transform: uppercase;
+}
+
+#call-area .container {
+    margin: 10px 40px;
+}
+
+#call-area .row {
+    display: block;
+    text-align: center;
+}
+
+#call-area p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: auto;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 0;
+    display: inline;
+}
+
+#call-area #call-btn {
+    background-color: #fff;
+    color: #65daf9;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 30px;
+    width: auto;
+    letter-spacing: 2px;
 }
