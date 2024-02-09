@@ -1,0 +1,43 @@
+/*tablets*/
+@media(max-width: 835px) {
+
+  /*geral*/ 
+  .container {
+    padding: 20px 0;
+  }
+
+  /*slider*/ 
+    #mainSlider .carousel-inner,
+    #mainSlider .carousel-item {
+      height: auto;
+    }
+
+    #mainSlider .carousel-caption h2 {
+      font-size: 28px;
+    }
+
+    #mainSlider .carousel-caption p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    #mainSlider .carousel-caption {
+      left: 10%;
+      right: 10%;
+    }
+
+    /*about*/
+
+    #about-area .row {
+      display: grid;
+      
+    }
+
+    #about-area .row #about-img-container {
+      order: 2;
+    }
+
+    #about-area #about-text {
+      
+    }
+}
