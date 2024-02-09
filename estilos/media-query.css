@@ -28,16 +28,64 @@
 
     /*about*/
 
-    #about-area .row {
-      display: grid;
-      
-    }
-
     #about-area .row #about-img-container {
       order: 2;
     }
 
-    #about-area #about-text {
-      
+    /*data*/ 
+
+    #data-area {
+      padding-top: 20px;
     }
+
+    .circle-box div {
+      padding: 0 10px;
+    }
+
+    #data-area p {
+      font-size: 16px;
+    }
+
+    /*team */
+
+    #card-title {
+      font-size: 14px;
+    }
+
+    .card-text {
+      font-size: 12px;
+    }
+
+    /*apply*/ 
+
+    #apply-area, #apply-area #company-img {
+      height: auto;
+    }
+
+    /*news*/
+
+    #news-area p {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #email-input {
+      width: 70%;
+    }
+
+    /*call-to-action*/
+
+    #call-area {
+      margin-top: 30px;
+    }
+
+    #call-area .container {
+      padding: 30px;
+    }
+
+    #call-area p, #call-area #call-btn {
+      font-size: 16px;
+    }
+
 }
