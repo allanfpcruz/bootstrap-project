@@ -18,6 +18,8 @@ p, li {
 
 /*nav bar*/
 header, .navbar {
+    width: 100vw;
+    box-sizing: border-box;
     padding: 0 20px;
     background-color: #353d41;
 }
@@ -329,7 +331,7 @@ header, .navbar {
 }
 
 #call-area .container {
-    margin: 10px 40px;
+    margin: 0px 40px;
 }
 
 #call-area .row {
@@ -386,8 +388,12 @@ header, .navbar {
     font-size: 16px;
 }
 
-#contact-area #contact-form, #contact-area #msg-box {
+#contact-area #contact-form {
     margin-top: 50px;
+}
+
+#contact-area #msg-box {
+    align-self: center;
 }
 
 #contact-area .contact-title {
