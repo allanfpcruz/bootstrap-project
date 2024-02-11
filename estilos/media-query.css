@@ -186,10 +186,7 @@
 
   #news-area p {
     font-size: 16px;
-  }
-
-  #news-area form {
-  }
+  
 
   #email-input {
     width: calc(100% - 150px);
